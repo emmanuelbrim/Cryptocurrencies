@@ -29,8 +29,9 @@ Next was to remove all currencies that didnot have a working Algorithm using the
 The coinName column was dropped from the mint_crypto_df dataframe to produce data ready to be transformed.
 Using get_dummies function the categorical features of the data was transformmed to numerical. Likewise the data was scaled using the standardScaler function from scikit-learn. The final dataframe "X" held all scaled data.
 
-Below is an imageof code and results of scaling the data.
-![]()
+_Below is an imageof code and results of scaling the data_
+
+![](https://github.com/emmanuelbrim/Cryptocurrencies/blob/main/Image/preprocessing.PNG)
 
 - Dimentional Reduction using PCA
 
@@ -38,7 +39,7 @@ The analysis required the reduction of the dimensions to managable components fo
 The Principal component analysis (PCA) was used to achieve this. 
 From SKlearn.decomposition class the PCA was imported and initialized as pca and used to transform the components of the data to 3.
 
-![]()
+![](https://github.com/emmanuelbrim/Cryptocurrencies/blob/main/Image/PCA.PNG)
 
 - Clustering
 
@@ -46,7 +47,7 @@ The third stage of the analysis was to cluster the cryptocurrency data to find t
 The elbow method was used to plot a line chart of possible clusters by inertia. The chart showed that with a cluster of 4 the model based on KMeans will produce the best accuracy. 
 Predictions were therfore generated using this metric and then a dataframe; clustered_df was produced to show the principal components and the predictions with the original dataframe X.
 
-![]()
+![](https://github.com/emmanuelbrim/Cryptocurrencies/blob/main/Image/KMeans.PNG)
 
 
 - Visualization
@@ -54,7 +55,9 @@ Predictions were therfore generated using this metric and then a dataframe; clus
 To present the final results to the board required creating a dashboard to visualize the data. Plotly's express class and pandas hvplot was used to produce graphs that depict the results of the classification model. 
 
 
-![]()
+![](https://github.com/emmanuelbrim/Cryptocurrencies/blob/main/Image/plotly.PNG)
+
+![](https://github.com/emmanuelbrim/Cryptocurrencies/blob/main/Image/hvplot.PNG)
 
 
 ## Summary
